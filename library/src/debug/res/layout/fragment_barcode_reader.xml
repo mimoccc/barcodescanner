@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorQRCodeReaderBackground">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorQRCodeReaderBackground">
+
+        <View
+            android:id="@+id/referenceView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <org.mjdev.libs.barcodescanner.widget.BarcodeScanView
+            android:id="@+id/scannerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:autoFlashStart="false"
+            app:autoFocusButtonColor="@color/colorQRCodeReaderButton"
+            app:autoFocusButtonVisible="true"
+            app:autoFocusInterval="@dimen/qrCodeScanInterval"
+            app:autoFocusMode="safe_focusing"
+            app:barcodeFormat="qr_code"
+            app:beepOnSuccess="false"
+            app:camera="back"
+            app:cameraSwitchButtonColor="@color/colorQRCodeReaderButton"
+            app:cameraSwitchButtonVisible="true"
+            app:flashButtonColor="@color/colorQRCodeReaderButton"
+            app:flashButtonVisible="true"
+            app:frameAspectRatioHeight="@dimen/qrCodeFrameAspectRatioHeight"
+            app:frameAspectRatioWidth="@dimen/qrCodeFrameAspectRatioWidth"
+            app:frameColor="@color/colorQRCodeReaderFrame"
+            app:frameCornersRadius="@dimen/qrCodeFrameCornersRadius"
+            app:frameCornersSize="@dimen/qrCodeFrameCornersSize"
+            app:frameSize="@dimen/qrCodeFrameSize"
+            app:frameThickness="@dimen/qrCodeFrameThickness"
+            app:laserColor="@color/colorQRCodeReaderLaser"
+            app:laserEnabled="true"
+            app:laserSize="@dimen/qrCodeLaserSize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:maskColor="@color/colorQRCodeReaderMask"
+            app:maskDrawable="@drawable/barcode_reader_mask"
+            app:redrawOnSuccess="true"
+            app:resultPadding="@dimen/qrCodeResultPadding"
+            app:scanMode="single"
+            app:testString="SPD*1.0*AM:9535.00*X-VS:1234567890*DT:20161217*CC:CZK*ACC:CZ3103000000270016060243*NTA:mimoccc@gmail.com"
+            app:vibrateOnSuccess="true" />
+
+        <TextView
+            android:id="@+id/labelScanQrCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/screenMargin"
+            android:layout_marginRight="@dimen/screenMargin"
+            android:gravity="center_horizontal"
+            android:letterSpacing="@dimen/qrCodeScanLabelLetterSpacing"
+            android:lineSpacingExtra="@dimen/qrCodeScanLabelLineSpacingExtra"
+            android:lines="1"
+            android:singleLine="true"
+            android:text="@string/title_scan_qr"
+            android:textColor="@color/colorQRCodeReaderTextLabel"
+            android:textSize="@dimen/textSizeLabel"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/descriptionScanQrCode"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/descriptionScanQrCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/screenMargin"
+            android:layout_marginRight="@dimen/screenMargin"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="@dimen/qrCodeDescriptionLineSpacingExtra"
+            android:lines="1"
+            android:singleLine="true"
+            android:text="@string/label_qr_code_scan"
+            android:textColor="@color/colorQRCodeReaderTextDescription"
+            android:textSize="@dimen/textSizeDefault"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toTopOf="@+id/referenceView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

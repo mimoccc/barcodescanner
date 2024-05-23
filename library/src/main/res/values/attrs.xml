@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BarcodeScanView">
+        <attr name="autoFocusButtonColor" format="color" />
+        <attr name="autoFocusButtonVisible" format="boolean" />
+        <attr name="autoFocusInterval" format="integer" />
+        <attr name="acceptedCurrencies" format="string" />
+        <attr name="autoFlashStart" format="boolean" />
+        <attr name="autoFocusMode" format="enum">
+            <enum name="safe_focusing" value="0" />
+            <enum name="continuous_focusin" value="1" />
+        </attr>
+        <attr name="barcodeFormat" format="enum">
+            <enum name="qr_code" value="0" />
+            <enum name="aztec" value="1" />
+            <enum name="codabar" value="2" />
+            <enum name="code_39" value="3" />
+            <enum name="code_93" value="4" />
+            <enum name="code_128" value="5" />
+            <enum name="data_matrix" value="6" />
+            <enum name="ean_8" value="7" />
+            <enum name="ean_13" value="8" />
+            <enum name="itf" value="9" />
+            <enum name="maxicode" value="10" />
+            <enum name="pdf_417" value="11" />
+            <enum name="rss_14" value="12" />
+            <enum name="rss_expanded" value="13" />
+            <enum name="upc_a" value="14" />
+            <enum name="upc_e" value="15" />
+            <enum name="upc_ean_extension" value="16" />
+            <enum name="one_dimensional" value="17" />
+            <enum name="two_dimensional" value="18" />
+            <enum name="all" value="19" />
+        </attr>
+        <attr name="beepOnSuccess" format="boolean" />
+        <attr name="camera" format="enum">
+            <enum name="front" value="0" />
+            <enum name="back" value="1" />
+        </attr>
+        <attr name="cameraSwitchButtonColor" format="color" />
+        <attr name="cameraSwitchButtonVisible" format="boolean" />
+        <attr name="flashButtonColor" format="color" />
+        <attr name="flashButtonVisible" format="boolean" />
+        <attr name="frameAspectRatioHeight" format="float" />
+        <attr name="frameAspectRatioWidth" format="float" />
+        <attr name="frameColor" format="color" />
+        <attr name="frameCornersRadius" format="dimension" />
+        <attr name="frameCornersSize" format="dimension" />
+        <attr name="frameSize" format="float" />
+        <attr name="frameThickness" format="dimension" />
+        <attr name="laserColor" format="color" />
+        <attr name="laserSize" format="dimension" />
+        <attr name="laserEnabled" format="boolean" />
+        <attr name="maskColor" format="color" />
+        <attr name="maskDrawable" format="reference" />
+        <attr name="resultPadding" format="dimension" />
+        <attr name="redrawOnSuccess" format="boolean" />
+        <attr name="scanMode" format="enum">
+            <enum name="single" value="0" />
+            <enum name="continuous" value="1" />
+        </attr>
+        <attr name="testString" format="string" />
+        <attr name="vibrateOnSuccess" format="boolean" />
+        <attr name="zoom" format="integer" />
+    </declare-styleable>
+
+</resources>

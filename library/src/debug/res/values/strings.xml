@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BarcodeScanner</string>
+    <string name="title_scan_qr" translatable="false">Scan QR Code</string>
+    <string name="label_qr_code_scan" translatable="false">To made payment please scan qr code to pay.</string>
+</resources>

@@ -1,0 +1,20 @@
+<resources>
+    <dimen name="screenRound">24dp</dimen>
+    <dimen name="screenMargin">16dp</dimen>
+
+    <dimen name="textSizeLabel">16sp</dimen>
+    <dimen name="textSizeDefault">14sp</dimen>
+
+    <item name="qrCodeScanInterval" format="integer" type="dimen">1000</item>
+    <item name="qrCodeFrameAspectRatioHeight" format="float" type="dimen">1.0</item>
+    <item name="qrCodeFrameAspectRatioWidth" format="float" type="dimen">1.0</item>
+    <item name="qrCodeFrameCornersRadius" type="dimen">4dp</item>
+    <item name="qrCodeFrameCornersSize" type="dimen">20dp</item>
+    <item name="qrCodeFrameSize" format="float" type="dimen">0.65</item>
+    <item name="qrCodeFrameThickness" type="dimen">4dp</item>
+    <item name="qrCodeLaserSize" type="dimen">2dp</item>
+    <item name="qrCodeResultPadding" type="dimen">24dp</item>
+    <item name="qrCodeScanLabelLetterSpacing" format="float" type="dimen">-0.01</item>
+    <item name="qrCodeScanLabelLineSpacingExtra" type="dimen">8sp</item>
+    <item name="qrCodeDescriptionLineSpacingExtra" type="dimen">6sp</item>
+</resources>
